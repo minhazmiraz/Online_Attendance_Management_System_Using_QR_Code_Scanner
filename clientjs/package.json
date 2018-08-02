@@ -1,0 +1,63 @@
+{
+  "name": "clientjs",
+  "version": "0.1.11",
+  "homepage": "https://clientjs.org",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jackspirou/clientjs.git"
+  },
+  "description": "Device information and digital fingerprinting written in pure JavaScript.",
+  "keywords": [
+    "browser",
+    "fingerprint",
+    "client",
+    "info",
+    "pure",
+    "javascript"
+  ],
+  "author": "Jack Spirou <jack@spirou.io> (http://twitter.com/jack_spirou)",
+  "contributors": [
+    {
+      "name": "Jack Spirou",
+      "url": "http://twitter.com/jack_spirou",
+      "email": "jack@spirou.io"
+    },
+    {
+      "name": "Daniel Montoya",
+      "url": "http://twitter.com/dsmontoya",
+      "email": "dsmontoyam@gmail.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/jackspirou/clientjs/issues"
+  },
+  "scripts": {
+    "postinstall": "node scripts/install.js",
+    "test": "node scripts/test.js",
+    "posttest": "./node_modules/karma/bin/karma start karma/aircover.conf.js",
+    "prepublish": "./node_modules/gulp/bin/gulp.js"
+  },
+  "main": "dist/client.min.js",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-closure-compiler": "^0.4.0",
+    "jasmine-core": "~2.4.1",
+    "karma": "^0.13.19",
+    "karma-chrome-launcher": "~0.2.2",
+    "karma-coverage": "^0.5.3",
+    "karma-firefox-launcher": "~0.1.7",
+    "karma-jasmine": "^0.3.6",
+    "karma-opera-launcher": "~0.3.0",
+    "karma-phantomjs-launcher": "^0.2.3",
+    "karma-safari-launcher": "~0.1.1",
+    "karma-sauce-launcher": "^0.3.0",
+    "phantomjs": "^1.9.19"
+  },
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
+}

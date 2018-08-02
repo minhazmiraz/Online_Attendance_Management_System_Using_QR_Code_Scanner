@@ -1,0 +1,1 @@
+<img src="qrcode.php" alt="QR Code"/>
